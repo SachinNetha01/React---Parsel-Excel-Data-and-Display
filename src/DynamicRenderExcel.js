@@ -46,8 +46,8 @@ const DynamicRenderExcel=()=>{
       {sheetData && (
         <Row>
           <Col md={12}>
-            <Table bordered className="border">
-              <thead className="text-primary">
+            <Table striped bordered hover className="table table-dark">
+              <thead className="text-success">
                 <tr>
                   {Object.keys(sheetData[sheet][0]).map((h) => (
                     <th key={h}>{h}</th>
