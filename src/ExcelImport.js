@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import * as XLSX from "xlsx/xlsx.mjs";
 
+import './App.css'
+
 const ExcelImport = (props) => {
   const [file, setFile] = useState([]);
   const [fileName, setFileName] = useState(null);
@@ -71,6 +73,7 @@ const ExcelImport = (props) => {
         accept="xlsx,xls"
         multiple={false}
         onChange={handleFile}
+        style={{margin:"10px"}}
       />
     </>
   );

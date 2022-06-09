@@ -27,12 +27,15 @@ const DynamicRenderExcel=()=>{
       {sheetData && (
         <div>
           <h5>List of Sheets:</h5>
-          <ButtonGroup>
+          <ButtonGroup style={{margin:"10px"}}>
             {Object.keys(sheetData).map((arr, index) => (
               <Button
-                color="primary"
+                color="outline-success"
                 onClick={() => handleClick(index)}
                 active={rSelected === index}
+                className='mr-1'
+                size="sm"
+                style={{margin:"5px", borderRadius:"6px"}}
               >
                 {arr}
               </Button>
